@@ -6,7 +6,7 @@ node -e "console.log('Running Node.js ' + process.version)"
 
 
   echo "Installing yarn..."
-  npm install -g yarn
+  yum install yarn
 
 #cd testsprint1/
 

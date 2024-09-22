@@ -1,17 +1,12 @@
 #!/bin/bash
-
-if ! which node &> /dev/null; then
-  echo "Installing Node.js..."
-  curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-  sudo install nodejs -y
-fi
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+source ~/.bashrc
+nvm install --lts
+node -e "console.log('Running Node.js ' + process.version)"
 
 
-
-if ! which yarn &> /dev/null; then
   echo "Installing yarn..."
   sudo npm install -g yarn
-fi
 
 cd testsprint1 
 

@@ -8,13 +8,12 @@ fi
 
 
 
-if ! which pm2 &> /dev/null; then
-  echo "Installing pm2..."
-  npm install -g pm2
-fi
+# if ! which pm2 &> /dev/null; then
+#   echo "Installing pm2..."
+#   npm install -g pm2
+# fi
 
 cd testsprint1 
-
 npm install
 
 npm start

@@ -8,12 +8,13 @@ fi
 
 
 
-# if ! which pm2 &> /dev/null; then
-#   echo "Installing pm2..."
-#   npm install -g pm2
-# fi
+if ! which yarn &> /dev/null; then
+  echo "Installing yarn..."
+  sudo npm install -g yarn
+fi
 
 cd testsprint1 
-npm install
 
-npm start
+yarn install
+
+yarn start

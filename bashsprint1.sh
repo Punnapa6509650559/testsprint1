@@ -8,7 +8,7 @@ node -e "console.log('Running Node.js ' + process.version)"
   echo "Installing yarn..."
   sudo npm install -g yarn
 
-cd testsprint1 
+cd testsprint1/
 
 yarn install
 

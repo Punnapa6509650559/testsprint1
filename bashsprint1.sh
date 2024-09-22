@@ -13,7 +13,7 @@ if ! which pm2 &> /dev/null; then
 fi
 
 
-cd pet-adoption
+#cd pet-adoption
 
 yarn install
 
